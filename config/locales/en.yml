@@ -869,11 +869,11 @@ en:
   layouts:
     project_name:
       # in <title>
-      title: OpenStreetMap
+      title: CommonMap
       # in <h1>
-      h1: OpenStreetMap
+      h1: CommonMap
     logo:
-      alt_text: OpenStreetMap logo
+      alt_text: CommonMap logo
     welcome_user: "Welcome, {{user_link}}"
     welcome_user_link_tooltip: Your user page
     home: home
@@ -900,13 +900,13 @@ en:
     user_diaries: User Diaries
     user_diaries_tooltip: View user diaries
     tag_line: The Free Wiki World Map
-    intro_1: "OpenStreetMap is a free editable map of the whole world. It is made by people like you."
-    intro_2: "OpenStreetMap allows you to view, edit and use geographical data in a collaborative way from anywhere on Earth."
-    intro_3: "OpenStreetMap's hosting is kindly supported by the {{ucl}} and {{bytemark}}. Other supporters of the project are listed in the {{partners}}."
-    intro_3_ucl: "UCL VR Centre"
-    intro_3_bytemark: "bytemark"
-    intro_3_partners: "wiki"
-    intro_3_partners_url: "http://wiki.openstreetmap.org/wiki/Partners"
+    intro_1: "CommonMap is hosting a digital collection of locations, free to contribute and consume by anyone for anything."
+#    intro_2: "OpenStreetMap allows you to view, edit and use geographical data in a collaborative way from anywhere on Earth."
+#    intro_3: "OpenStreetMap's hosting is kindly supported by the {{ucl}} and {{bytemark}}. Other supporters of the project are listed in the {{partners}}."
+#    intro_3_ucl: "UCL VR Centre"
+#    intro_3_bytemark: "bytemark"
+#    intro_3_partners: "wiki"
+#    intro_3_partners_url: "http://wiki.openstreetmap.org/wiki/Partners"
     osm_offline: "The OpenStreetMap database is currently offline while essential database maintenance work is carried out."
     osm_read_only: "The OpenStreetMap database is currently in read-only mode while essential database maintenance work is carried out."
     donate: "Support OpenStreetMap by {{link}} to the Hardware Upgrade Fund."
