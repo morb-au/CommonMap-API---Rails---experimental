@@ -44,7 +44,7 @@ OpenLayers.Layer.OSM.CommonMapnik = OpenLayers.Class(OpenLayers.Layer.OSM, {
      */
     initialize: function(name, options) {
         var url = [
-            "http://tile.production.openstreetmap.org/${z}/${x}/${y}.png",
+            "http://tile.production.commonmap.org/${z}/${x}/${y}.png",
         ];
         options = OpenLayers.Util.extend({ numZoomLevels: 19 }, options);
         var newArguments = [name, url, options];
