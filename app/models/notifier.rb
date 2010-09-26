@@ -37,7 +37,7 @@ class Notifier < ActionMailer::Base
 
   def gpx_failure(trace, error)
     common_headers trace.user
-    from "webmaster@openstreetmap.org"
+    from "webmaster@commonmap.org"
     subject I18n.t('notifier.gpx_notification.failure.subject')
     body :trace_name => trace.name,
          :trace_description => trace.description,
@@ -99,8 +99,8 @@ private
   def common_headers(recipient)
     recipients recipient.email
     locale recipient.preferred_language_from(I18n.available_locales)
-    from "OpenStreetMap <webmaster@openstreetmap.org>"
-    headers "return-path" => "bounces@openstreetmap.org",
+    from "OpenStreetMap <webmaster@commonmap.org>"
+    headers "return-path" => "bounces@commonmap.org",
             "Auto-Submitted" => "auto-generated"
   end
 
