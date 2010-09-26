@@ -31,6 +31,12 @@ function createMap(divName, options) {
       displayProjection: new OpenLayers.Projection("EPSG:4326")
    });
 
+   var commonmapnik = new OpenLayers.Layer.OSM.CommonMapnik(i18n("javascripts.map.base.commonmapnik"), {
+      displayOutsideMaxExtent: true,
+      wrapDateLine: true
+   });
+   map.addLayer(commonmapnik);
+
    var mapnik = new OpenLayers.Layer.OSM.Mapnik(i18n("javascripts.map.base.mapnik"), {
       displayOutsideMaxExtent: true,
       wrapDateLine: true
@@ -67,7 +73,7 @@ function createMap(divName, options) {
    });
    map.addLayer(maplint);
 
-   var numZoomLevels = Math.max(mapnik.numZoomLevels, osmarender.numZoomLevels);
+   var numZoomLevels = Math.max(commonmapnik.numZoomLevels, mapnik.numZoomLevels, osmarender.numZoomLevels);
 
    markers = new OpenLayers.Layer.Markers("Markers", {
       displayInLayerSwitcher: false,

@@ -1623,6 +1623,7 @@ en:
   javascripts:
     map:
       base:
+        commonmapnik: CommonMapnik
         mapnik: Mapnik
         osmarender: Osmarender
         cycle_map: Cycle Map

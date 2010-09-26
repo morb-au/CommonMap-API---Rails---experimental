@@ -29,6 +29,32 @@ OpenLayers.Util.onImageLoadError = function() {
 };
 
 /**
+ * Class: OpenLayers.Layer.OSM.CommonMapnik
+ *
+ * Inherits from:
+ *  - <OpenLayers.Layer.OSM>
+ */
+OpenLayers.Layer.OSM.CommonMapnik = OpenLayers.Class(OpenLayers.Layer.OSM, {
+    /**
+     * Constructor: OpenLayers.Layer.OSM.CommonMapnik
+     *
+     * Parameters:
+     * name - {String}
+     * options - {Object} Hashtable of extra options to tag onto the layer
+     */
+    initialize: function(name, options) {
+        var url = [
+            "http://tile.production.openstreetmap.org/${z}/${x}/${y}.png",
+        ];
+        options = OpenLayers.Util.extend({ numZoomLevels: 19 }, options);
+        var newArguments = [name, url, options];
+        OpenLayers.Layer.OSM.prototype.initialize.apply(this, newArguments);
+    },
+
+    CLASS_NAME: "OpenLayers.Layer.OSM.CommonMapnik"
+});
+
+/**
  * Class: OpenLayers.Layer.OSM.Mapnik
  *
  * Inherits from:
