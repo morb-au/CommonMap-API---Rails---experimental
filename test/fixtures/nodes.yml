@@ -1,5 +1,5 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-<% SCALE = 10000000 unless defined?(SCALE) %>
+<% SCALE = 10000000000000000 unless defined?(SCALE) %>
 
 visible_node:
   id: 1

@@ -943,7 +943,7 @@ class AmfController < ApplicationController
   def sql_find_pois_in_area(xmin,ymin,xmax,ymax)
     pois=[]
     sql=<<-EOF
-      SELECT current_nodes.id,current_nodes.latitude*0.0000001 AS lat,current_nodes.longitude*0.0000001 AS lon,current_nodes.version 
+      SELECT current_nodes.id,current_nodes.latitude*0.0000000000000001 AS lat,current_nodes.longitude*0.0000000000000001 AS lon,current_nodes.version 
       FROM current_nodes 
        LEFT OUTER JOIN current_way_nodes cwn ON cwn.node_id=current_nodes.id 
        WHERE current_nodes.visible=TRUE
@@ -986,7 +986,7 @@ class AmfController < ApplicationController
   def sql_get_nodes_in_way(wayid)
     points=[]
     sql=<<-EOF
-      SELECT latitude*0.0000001 AS lat,longitude*0.0000001 AS lon,current_nodes.id,current_nodes.version 
+      SELECT latitude*0.0000000000000001 AS lat,longitude*0.0000000000000001 AS lon,current_nodes.id,current_nodes.version 
       FROM current_way_nodes,current_nodes 
        WHERE current_way_nodes.id=#{wayid.to_i} 
        AND current_way_nodes.node_id=current_nodes.id 

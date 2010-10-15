@@ -6,6 +6,8 @@ class AlterLatitudeLongitudeHigherPrecision < ActiveRecord::Migration
     execute "ALTER TABLE current_nodes ALTER COLUMN longitude TYPE bigint"
     execute "ALTER TABLE nodes ALTER COLUMN latitude TYPE bigint"
     execute "ALTER TABLE nodes ALTER COLUMN longitude TYPE bigint"
+    execute "ALTER TABLE gps_points ALTER COLUMN latitude TYPE bigint"
+    execute "ALTER TABLE gps_points ALTER COLUMN longitude TYPE bigint"
   end
 
   def self.down
@@ -13,5 +15,7 @@ class AlterLatitudeLongitudeHigherPrecision < ActiveRecord::Migration
     execute "ALTER TABLE current_nodes ALTER COLUMN longitude TYPE integer"
     execute "ALTER TABLE nodes ALTER COLUMN latitude TYPE integer"
     execute "ALTER TABLE nodes ALTER COLUMN longitude TYPE integer"
+    execute "ALTER TABLE gps_points ALTER COLUMN latitude TYPE integer"
+    execute "ALTER TABLE gps_points ALTER COLUMN longitude TYPE integer"
   end
 end

@@ -40,7 +40,7 @@ long long tile_for_point(UDF_INIT *initid, UDF_ARGS *args, char *is_null, char *
    long long lat = *(long long *)args->args[0];
    long long lon = *(long long *)args->args[1];
 
-   return xy2tile(lon2x(lon / 10000000.0), lat2y(lat / 10000000.0));
+   return xy2tile(lon2x(lon / 10000000000000000.0), lat2y(lat / 10000000000000000.0));
 }
 #endif
 
@@ -55,8 +55,8 @@ long long tile_for_point(UDF_INIT *initid, UDF_ARGS *args, char *is_null, char *
 Datum
 tile_for_point(PG_FUNCTION_ARGS)
 {
-  double lat = PG_GETARG_INT32(0) / 10000000.0;
-  double lon = PG_GETARG_INT32(1) / 10000000.0;
+  double lat = PG_GETARG_INT64(0) / 10000000000000000.0;
+  double lon = PG_GETARG_INT64(1) / 10000000000000000.0;
 
   PG_RETURN_INT64(xy2tile(lon2x(lon), lat2y(lat)));
 }
@@ -66,7 +66,7 @@ PG_FUNCTION_INFO_V1(tile_for_point);
 /*
  * To bind this into PGSQL, try something like:
  *
- * CREATE FUNCTION tile_for_point(int4, int4) RETURNS int8
+ * CREATE FUNCTION tile_for_point(int8, int8) RETURNS int8
  *  AS '/path/to/rails-port/db/functions/libpgosm', 'tile_for_point'
  *  LANGUAGE C STRICT;
  *

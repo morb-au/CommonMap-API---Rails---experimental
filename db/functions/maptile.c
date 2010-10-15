@@ -52,8 +52,8 @@ void maptile_for_point_deinit(UDF_INIT *initid)
 
 long long maptile_for_point(UDF_INIT *initid, UDF_ARGS *args, char *is_null, char *error)
 {
-   double       lat = *(long long *)args->args[0] / 10000000.0;
-   double       lon = *(long long *)args->args[1] / 10000000.0;
+   double       lat = *(long long *)args->args[0] / 10000000000000000.0;
+   double       lon = *(long long *)args->args[1] / 10000000000000000.0;
    long long    zoom = *(long long *)args->args[2];
 
    return internal_maptile_for_point(lat, lon, zoom);
@@ -71,8 +71,8 @@ long long maptile_for_point(UDF_INIT *initid, UDF_ARGS *args, char *is_null, cha
 Datum
 maptile_for_point(PG_FUNCTION_ARGS)
 {
-  double lat = PG_GETARG_INT64(0) / 10000000.0;
-  double lon = PG_GETARG_INT64(1) / 10000000.0;
+  double lat = PG_GETARG_INT64(0) / 10000000000000000.0;
+  double lon = PG_GETARG_INT64(1) / 10000000000000000.0;
   int zoom = PG_GETARG_INT32(2);
 
   PG_RETURN_INT32(internal_maptile_for_point(lat, lon, zoom));

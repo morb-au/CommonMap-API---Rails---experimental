@@ -1,6 +1,6 @@
 # FIXME! all of these changesets need their bounding boxes set correctly!
 #
-<% SCALE = 10000000 unless defined?(SCALE) %>
+<% SCALE = 10000000000000000 unless defined?(SCALE) %>
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 normal_user_first_change:
