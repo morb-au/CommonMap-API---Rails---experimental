@@ -8,8 +8,8 @@ xml.rss("version" => "2.0",
     xml.description @description
     xml.link url_for(:action => "list", :only_path => false)
     xml.image do
-      xml.url "http://www.openstreetmap.org/images/mag_map-rss2.0.png"
-      xml.title "OpenStreetMap"
+      xml.url "http://api.production.commonmap.org/images/mag_map-rss2.0.png"
+      xml.title "CommonMap Diary Entries"
       xml.width "100"
       xml.height "100"
       xml.link url_for(:action => "list", :only_path => false)

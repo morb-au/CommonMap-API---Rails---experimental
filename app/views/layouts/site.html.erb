@@ -11,8 +11,8 @@
     <%= stylesheet_link_tag 'small', :media => "only screen and (max-width: 481px)" %>
     <%= stylesheet_link_tag 'large', :media => "screen and (min-width: 482px)" %> 
     <%= stylesheet_link_tag 'print', :media => "print" %>
-    <%= tag("link", { :rel => "search", :type => "application/opensearchdescription+xml", :title => "OpenStreetMap Search", :href => "/opensearch/osm.xml" }) %>
-    <%= tag("meta", { :name => "description", :content => "OpenStreetMap is the free wiki world map." }) %>
+    <%= tag("link", { :rel => "search", :type => "application/opensearchdescription+xml", :title => "CommonMap Search", :href => "/opensearch/osm.xml" }) %>
+    <%= tag("meta", { :name => "description", :content => "CommonMap hosts geodata available under a Creative Commons - Attribution licence." }) %>
     <%= yield :head %>
     <title><%= t 'layouts.project_name.title' %><%= ' | '+ h(@title) if @title %></title>
   </head>
@@ -118,13 +118,13 @@
 
       <% if false %>
       <div id="donate" class="notice">
-        <%= t 'layouts.donate', :link => "<a href=\"http://donate.openstreetmap.org/\">#{t('layouts.donate_link_text')}</a>" %>
+        <%= t 'layouts.donate', :link => "<a href=\"http://commonmap.org/page/donate\">#{t('layouts.donate_link_text')}</a>" %>
       </div>
       <% end %>
 
       <div id="left_menu" class="left_menu">
         <a href="<%= t 'layouts.help_wiki_url' %>" title="<%= t 'layouts.help_wiki_tooltip' %>"><%= t 'layouts.help_wiki' %></a><br />
-        <a href="http://blogs.openstreetmap.org/" title="<%= t 'layouts.news_blog_tooltip' %>"><%= t 'layouts.news_blog' %></a><br />
+        <a href="http://commonmap.org/blog" title="<%= t 'layouts.news_blog_tooltip' %>"><%= t 'layouts.news_blog' %></a><br />
         <a href="<%= t 'layouts.shop_url' %>" title="<%= t 'layouts.shop_tooltip' %>"><%= t 'layouts.shop' %></a><br />
         <%= yield :left_menu %>
       </div>
@@ -133,7 +133,7 @@
 
       <center>
         <div class="donate">
-          <a href="http://donate.openstreetmap.org/" title="<%= h(t('layouts.make_a_donation.title')) %>"><%= h(t('layouts.make_a_donation.text')) %></a>
+          <a href="http://commonmap.org/page/donate" title="<%= h(t('layouts.make_a_donation.title')) %>"><%= h(t('layouts.make_a_donation.text')) %></a>
         </div>
 
         <div id="cclogo" style="width: 88px">
