@@ -8,10 +8,10 @@ ENV['RAILS_ENV'] ||= 'production'
 RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
 # Set the server URL
-SERVER_URL = ENV['OSM_SERVER_URL'] || 'www.openstreetmap.org'
+SERVER_URL = ENV['OSM_SERVER_URL'] || 'api.production.commonmap.org'
 
 # Set the generator
-GENERATOR = ENV['OSM_SERVER_GENERATOR'] || 'OpenStreetMap server'
+GENERATOR = ENV['OSM_SERVER_GENERATOR'] || 'CommonMap server'
 
 # Application constants needed for routes.rb - must go before Initializer call
 API_VERSION = ENV['OSM_API_VERSION'] || '0.6'
