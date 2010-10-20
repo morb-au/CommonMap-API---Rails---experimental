@@ -346,14 +346,14 @@ en:
       edit: "Edit"
     feed:
       user:
-        title: "OpenStreetMap diary entries for {{user}}"
-        description: "Recent OpenStreetMap diary entries from {{user}}"
+        title: "CommonMap diary entries for {{user}}"
+        description: "Recent CommonMap diary entries from {{user}}"
       language:
-        title: "OpenStreetMap diary entries in {{language_name}}"
-        description: "Recent diary entries from users of OpenStreetMap in {{language_name}}"
+        title: "CommonMap diary entries in {{language_name}}"
+        description: "Recent diary entries from users of CommonMap in {{language_name}}"
       all:
-        title: "OpenStreetMap diary entries"
-        description: "Recent diary entries from users of OpenStreetMap"
+        title: "CommonMap diary entries"
+        description: "Recent diary entries from users of CommonMap"
   export:
     start:
       area_to_export: "Area to Export"
@@ -391,7 +391,7 @@ en:
   geocoder:
     search:
       title:
-        latlon: 'Results from <a href="http://openstreetmap.org/">Internal</a>'
+        latlon: 'Results from <a href="http://api.commonmap.org/">Internal</a>'
         us_postcode: 'Results from <a href="http://geocoder.us/">Geocoder.us</a>'
         uk_postcode: 'Results from <a href="http://www.npemap.org.uk/">NPEMap / FreeThe Postcode</a>'
         ca_postcode: 'Results from <a href="http://geocoder.ca/">Geocoder.CA</a>'
@@ -907,40 +907,40 @@ en:
 #    intro_3_bytemark: "bytemark"
 #    intro_3_partners: "wiki"
 #    intro_3_partners_url: "http://wiki.openstreetmap.org/wiki/Partners"
-    osm_offline: "The OpenStreetMap database is currently offline while essential database maintenance work is carried out."
-    osm_read_only: "The OpenStreetMap database is currently in read-only mode while essential database maintenance work is carried out."
-    donate: "Support OpenStreetMap by {{link}} to the Hardware Upgrade Fund."
+    osm_offline: "The CommonMap database is currently offline while essential database maintenance work is carried out."
+    osm_read_only: "The CommonMap database is currently in read-only mode while essential database maintenance work is carried out."
+    donate: "Support CommonMap by {{link}}."
     donate_link_text: donating
     help_wiki: "Help &amp; Wiki"
     help_wiki_tooltip: "Help &amp; Wiki site for the project"
-    help_wiki_url: "http://wiki.openstreetmap.org"
-    news_blog: "News blog"
-    news_blog_tooltip: "News blog about OpenStreetMap, free geographical data, etc."
-    shop: Shop
-    shop_tooltip: Shop with branded OpenStreetMap merchandise
-    shop_url: http://wiki.openstreetmap.org/wiki/Merchandise
-    sotm: 'Come to the 2009 OpenStreetMap Conference, The State of the Map, July 10-12 in Amsterdam!'
+    help_wiki_url: "http://commonmap.org/wiki/wiki-main-page"
+    news_blog: "Community Blogs"
+    news_blog_tooltip: "Blogs about CommonMap and its community."
+#    shop: Shop
+#    shop_tooltip: Shop with branded OpenStreetMap merchandise
+#    shop_url: http://wiki.openstreetmap.org/wiki/Merchandise
+#    sotm: 'Come to the 2009 OpenStreetMap Conference, The State of the Map, July 10-12 in Amsterdam!'
     license:
       alt: CC BY 3.0
       title: CommonMap data is licensed under the Creative Commons Attribution 3.0 Australia Licence, using "CommonMap Contributors" as the attribution.
     make_a_donation:
-      title: Support OpenStreetMap with a monetary donation
+      title: Support CommonMap with a monetary donation
       text: Make a Donation
   notifier:
     diary_comment_notification:
-      subject: "[OpenStreetMap] {{user}} commented on your diary entry"
+      subject: "[CommonMap] {{user}} commented on your diary entry"
       hi: "Hi {{to_user}},"
-      header: "{{from_user}} has commented on your recent OpenStreetMap diary entry with the subject {{subject}}:"
+      header: "{{from_user}} has commented on your recent CommonMap diary entry with the subject {{subject}}:"
       footer: "You can also read the comment at {{readurl}} and you can comment at {{commenturl}} or reply at {{replyurl}}"
     message_notification:
-      subject: "[OpenStreetMap] {{user}} sent you a new message"
+      subject: "[CommonMap] {{user}} sent you a new message"
       hi: "Hi {{to_user}},"
-      header: "{{from_user}} has sent you a message through OpenStreetMap with the subject {{subject}}:"
+      header: "{{from_user}} has sent you a message through CommonMap with the subject {{subject}}:"
       footer1: "You can also read the message at {{readurl}}"
       footer2: "and you can reply at {{replyurl}}"
     friend_notification:
-      subject: "[OpenStreetMap] {{user}} added you as a friend"
-      had_added_you: "{{user}} has added you as a friend on OpenStreetMap."
+      subject: "[CommonMap] {{user}} added you as a friend"
+      had_added_you: "{{user}} has added you as a friend on CommonMap."
       see_their_profile: "You can see their profile at {{userurl}}."
       befriend_them: "You can also add them as a friend at {{befriendurl}}."
     gpx_notification:
@@ -950,49 +950,49 @@ en:
       and_the_tags: "and the following tags:"
       and_no_tags: "and no tags."
       failure:
-        subject: "[OpenStreetMap] GPX Import failure"
+        subject: "[CommonMap] GPX Import failure"
         failed_to_import: "failed to import. Here is the error:"
         more_info_1: "More information about GPX import failures and how to avoid"
         more_info_2: "them can be found at:"
-        import_failures_url: "http://wiki.openstreetmap.org/wiki/GPX_Import_Failures"
+        import_failures_url: "http://commonmap.org/wiki/gpx-import-failures"
       success:
-        subject: "[OpenStreetMap] GPX Import success"
+        subject: "[CommonMap] GPX Import success"
         loaded_successfully: loaded successfully with {{trace_points}} out of a possible {{possible_points}} points.
     signup_confirm:
-      subject: "[OpenStreetMap] Confirm your email address"
+      subject: "[CommonMap] Confirm your email address"
     signup_confirm_plain:
       greeting: "Hi there!"
       hopefully_you: "Someone (hopefully you) would like to create an account over at"
       # next two translations run-on : please word wrap appropriately
       click_the_link_1: "If this is you, welcome! Please click the link below to confirm your"
-      click_the_link_2: "account and read on for more information about OpenStreetMap."
-      introductory_video: "You can watch an introductory video to OpenStreetMap here:"
-      more_videos: "There are more videos here:"
-      the_wiki: "Get reading about OpenStreetMap on the wiki:"
-      the_wiki_url: "http://wiki.openstreetmap.org/wiki/Beginners%27_Guide"
-      blog_and_twitter: "Catch up with the latest news via the OpenStreetMap blog or Twitter:"
-      opengeodata: "OpenGeoData.org is OpenStreetMap founder Steve Coast's blog, and it has podcasts too:"
-      wiki_signup: "You may also want to sign up to the OpenStreetMap wiki at:"
-      wiki_signup_url: "http://wiki.openstreetmap.org/index.php?title=Special:Userlogin&type=signup&returnto=Main_Page"
+      click_the_link_2: "account and read on for more information about CommonMap."
+#      introductory_video: "You can watch an introductory video to CommonMap here:"
+#      more_videos: "There are more videos here:"
+      the_wiki: "Get reading about CommonMap on the wiki:"
+      the_wiki_url: "http://commonmap.org/wiki/wiki-main-page"
+      blog_and_twitter: "Catch up with the latest news via the CommonMap blogs, Facebook, or Twitter:"
+#      opengeodata: "OpenGeoData.org is OpenStreetMap founder Steve Coast's blog, and it has podcasts too:"
+#      wiki_signup: "You may also want to sign up to the OpenStreetMap wiki at:"
+#      wiki_signup_url: "http://wiki.openstreetmap.org/index.php?title=Special:Userlogin&type=signup&returnto=Main_Page"
       # next four translations are in pairs : please word wrap appropriately
-      user_wiki_1: "It is recommended that you create a user wiki page, which includes"
-      user_wiki_2: "category tags noting where you are, such as [[Category:Users_in_London]]."
-      current_user_1: "A list of current users in categories, based on where in the world"
-      current_user_2: "they are, is available from:"
+#      user_wiki_1: "It is recommended that you create a user wiki page, which includes"
+#      user_wiki_2: "category tags noting where you are, such as [[Category:Users_in_London]]."
+#      current_user_1: "A list of current users in categories, based on where in the world"
+#      current_user_2: "they are, is available from:"
     signup_confirm_html:
       greeting: "Hi there!"
       hopefully_you: "Someone (hopefully you) would like to create an account over at"
-      click_the_link: "If this is you, welcome! Please click the link below to confirm that account and read on for more information about OpenStreetMap"
-      introductory_video: "You can watch an {{introductory_video_link}}."
-      video_to_openstreetmap: "introductory video to OpenStreetMap"
-      more_videos: "There are {{more_videos_link}}."
-      more_videos_here: "more videos here"
-      get_reading: Get reading about OpenStreetMap <a href="http://wiki.openstreetmap.org/wiki/Beginners%27_Guide">on the wiki</a>, catch up with the latest news via the <a href="http://blog.openstreetmap.org/">OpenStreetMap blog</a> or <a href="http://twitter.com/openstreetmap">Twitter</a>, or browse through OpenStreetMap founder Steve Coast's <a href="http://www.opengeodata.org/">OpenGeoData blog</a> for the potted history of the project, which has <a href="http://www.opengeodata.org/?cat=13">podcasts to listen to</a> also!
-      wiki_signup: 'You may also want to <a href="http://wiki.openstreetmap.org/index.php?title=Special:Userlogin&type=signup&returnto=Main_Page">sign up to the OpenStreetMap wiki</a>.'
-      user_wiki_page: 'It is recommended that you create a user wiki page, which includes category tags noting where you are, such as <a href="http://wiki.openstreetmap.org/wiki/Category:Users_in_London">[[Category:Users_in_London]]</a>.'
-      current_user: 'A list of current users in categories, based on where in the world they are, is available from <a href="http://wiki.openstreetmap.org/wiki/Category:Users_by_geographical_region">Category:Users_by_geographical_region</a>.'
+      click_the_link: "If this is you, welcome! Please click the link below to confirm that account and read on for more information about CommonMap"
+#      introductory_video: "You can watch an {{introductory_video_link}}."
+#      video_to_openstreetmap: "introductory video to OpenStreetMap"
+#      more_videos: "There are {{more_videos_link}}."
+#      more_videos_here: "more videos here"
+      get_reading: Get reading about OpenStreetMap <a href="http://commonmap.org/wiki/wiki-main-page">on the wiki</a>, catch up with the latest news via the <a href="http://commonmap.org/blog">OpenStreetMap blog</a>, <a href="http://www.facebook.com/pages/CommonMap/121577864539575">Facebook</a> or <a href="http://twitter.com/commonmap">Twitter</a>.
+#      wiki_signup: 'You may also want to <a href="http://wiki.openstreetmap.org/index.php?title=Special:Userlogin&type=signup&returnto=Main_Page">sign up to the OpenStreetMap wiki</a>.'
+#      user_wiki_page: 'It is recommended that you create a user wiki page, which includes category tags noting where you are, such as <a href="http://wiki.openstreetmap.org/wiki/Category:Users_in_London">[[Category:Users_in_London]]</a>.'
+#      current_user: 'A list of current users in categories, based on where in the world they are, is available from <a href="http://wiki.openstreetmap.org/wiki/Category:Users_by_geographical_region">Category:Users_by_geographical_region</a>.'
     email_confirm:
-      subject: "[OpenStreetMap] Confirm your email address"
+      subject: "[CommonMap] Confirm your email address"
     email_confirm_plain:
       greeting: "Hi,"
       hopefully_you_1: "Someone (hopefully you) would like to change their email address over at"
@@ -1003,11 +1003,11 @@ en:
       hopefully_you: "Someone (hopefully you) would like to change their email address over at {{server_url}} to {{new_address}}."
       click_the_link: "If this is you, please click the link below to confirm the change."
     lost_password:
-      subject: "[OpenStreetMap] Password reset request"
+      subject: "[CommonMap] Password reset request"
     lost_password_plain:
       greeting: "Hi,"
-      hopefully_you_1: "Someone (possibly you) has asked for the password to be reset on this"
-      hopefully_you_2: "email addresses openstreetmap.org account."
+      hopefully_you_1: "Someone (possibly you) has asked for the password to be reset on the"
+      hopefully_you_2: "api.production.commonmap.org account associated with this email address."
       click_the_link: "If this is you, please click the link below to reset your password."
     lost_password_html:
       greeting: "Hi,"
@@ -1099,7 +1099,7 @@ en:
       anon_edits: "({{link}})"
       anon_edits_link: "http://wiki.openstreetmap.org/wiki/Disabling_anonymous_edits"
       anon_edits_link_text: "Find out why this is the case."
-      flash_player_required: 'You need a Flash player to use Potlatch, the OpenStreetMap Flash editor. You can <a href="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">download Flash Player from Adobe.com</a>. <a href="http://wiki.openstreetmap.org/wiki/Editing">Several other options</a> are also available for editing OpenStreetMap.'
+      flash_player_required: 'You need a Flash player to use Potlatch, the CommonMap Flash editor. You can <a href="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">download Flash Player from Adobe.com</a>. <a href="http://wiki.openstreetmap.org/wiki/Editing">Several other options</a> are also available for editing CommonMap.'
       potlatch_unsaved_changes: "You have unsaved changes. (To save in Potlatch, you should deselect the current way or point, if editing in live mode, or click save if you have a save button.)"
     sidebar:
       search_results: Search Results
@@ -1112,7 +1112,7 @@ en:
       search_help: "examples: 'Alkmaar', 'Regent Street, Cambridge', 'CB2 5AQ', or 'post offices near Lünen' <a href='http://wiki.openstreetmap.org/wiki/Search'>more examples...</a>"
     key:
       map_key: "Map key"
-      map_key_tooltip: "Map key for the mapnik rendering at this zoom level"
+      map_key_tooltip: "Map key for the map rendering at this zoom level"
       table:
         heading: "Legend for z{{zoom_level}}"
         entry:
@@ -1624,12 +1624,12 @@ en:
     map:
       base:
         commonmapnik: CommonMapnik
-        mapnik: Mapnik
-        osmarender: Osmarender
-        cycle_map: Cycle Map
-        noname: NoName
+        mapnik: Mapnik (CC BY-SA)
+        osmarender: Osmarender (CC BY-SA)
+        cycle_map: Cycle Map (CC BY-SA)
+        noname: NoName (CC BY-SA)
       overlays:
-        maplint: Maplint
+        maplint: Maplint (CC BY-SA)
     site:
       edit_tooltip: Edit the map
       edit_disabled_tooltip: Zoom in to edit the map
