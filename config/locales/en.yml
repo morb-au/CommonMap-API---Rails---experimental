@@ -364,7 +364,7 @@ en:
       osmarender_image: "Osmarender Image"
       embeddable_html: "Embeddable HTML"
       licence: "Licence"
-      export_details: 'CommonMap data is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia licence</a>.'
+      export_details: 'CommonMap data is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia licence</a>, using "CommonMap Contributors" as the attribution.'
       too_large:
         heading: "Area Too Large"
         body: "This area is too large to be exported as CommonMap XML data. Please zoom in or select a smaller area."
@@ -922,7 +922,7 @@ en:
     sotm: 'Come to the 2009 OpenStreetMap Conference, The State of the Map, July 10-12 in Amsterdam!'
     license:
       alt: CC BY 3.0
-      title: CommonMap data is licensed under the Creative Commons Attribution 3.0 Australia License
+      title: CommonMap data is licensed under the Creative Commons Attribution 3.0 Australia Licence, using "CommonMap Contributors" as the attribution.
     make_a_donation:
       title: Support OpenStreetMap with a monetary donation
       text: Make a Donation
@@ -1087,11 +1087,11 @@ en:
       permalink: Permalink
       shortlink: Shortlink
       license:
-        notice: "Licensed under the {{license_name}} license by the {{project_name}} and its contributors."
-        license_name: "Creative Commons Attribution-Share Alike 2.0"
-        license_url: "http://creativecommons.org/licenses/by-sa/2.0/"
-        project_name: "OpenStreetMap project"
-        project_url: "http://openstreetmap.org"
+        notice: "Licensed under the {{license_name}} licence, by {{project_name}} Contributors."
+        license_name: "Creative Commons Attribution 3.0 Australia"
+        license_url: "http://creativecommons.org/licenses/by/3.0/au/"
+        project_name: "CommonMap"
+        project_url: "http://commonmap.org"
     edit:
       not_public: "You have not set your edits to be public."
       not_public_description: "You can no longer edit the map unless you do so. You can set your edits as public from your {{user_page}}."
@@ -1389,7 +1389,7 @@ en:
       no_auto_account_create: "Unfortunately we are not currently able to create an account for you automatically."
       contact_webmaster: 'Please contact the <a href="mailto:webmaster@commonmap.org">webmaster</a> to arrange for an account to be created - we will try and deal with the request as quickly as possible.'
       fill_form: "Fill in the form and we will send you a quick email to activate your account."
-      license_agreement: 'By creating an account, you agree that all data you contribute to this CommonMap project can be (non-exclusively) licensed under the <a href="http://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a> (CC BY).'
+      license_agreement: 'By creating an account, you agree that all data you contribute to this CommonMap project can be (non-exclusively) licensed under the <a href="http://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a> (CC BY). You also agree to have your work collectively attributed as "CommonMap Contributors", with individual attribution retained as part of each map feature you contribute.'
       email address: "Email Address:"
       confirm email address: "Confirm Email Address:"
       not displayed publicly: 'Not displayed publicly (see <a href="http://wiki.openstreetmap.org/wiki/Privacy_Policy" title="wiki privacy policy including section on email addresses">privacy policy</a>)'
